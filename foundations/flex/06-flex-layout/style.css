@@ -5,10 +5,28 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  outline-style: solid black;
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+  text-decoration: none;
+  color: black;
 }
+
 
 img {
   width: 600px;
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+
 }
 
 button {
@@ -16,6 +34,19 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+  display: flex;
+  flex-direction: row;
+  min-height: 30px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -23,4 +54,90 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+  display: flex;
+  justify-content: center;
 }
+
+.header {
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 215px;
+
+  }
+
+.footer {
+  /* border-style: solid; /* Required to make the border visible */
+  /* border-width: 2px;
+  /* border-color: red; /* Choose any color name, HEX, RGB, or HSL value */
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(239, 239, 237);
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.left-links {
+  display: flex;
+  flex-direction: row;
+  max-width: 350;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  margin: 5px;
+  align-self: center;
+  color:rgb(128, 128, 128);
+}
+
+.right-links {
+  display: flex;
+  flex-direction: row;
+  max-width: 350;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+  align-self: center;
+  color:rgb(128, 128, 128);
+
+}
+
+/* Removes bullets/numbers from all lists on the page */
+ul {
+    list-style-type: none;
+    /* Optional: This also removes default indentation/padding */
+    padding: 0;
+    margin: 0;
+}
+
+/* Or, target specific lists using a class or ID */
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
